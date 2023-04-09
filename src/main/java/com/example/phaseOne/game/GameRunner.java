@@ -2,13 +2,14 @@ package com.example.phaseOne.game;
 
 public class GameRunner {
     Mario marioGame;
-    public GameRunner(Mario marioGameObj){
-        this.marioGame=marioGameObj;
+    private SuperContra SuperContra;
+    public GameRunner(SuperContra SuperContra){
+        this.SuperContra=SuperContra;
     }
     public void run() {
-        marioGame.left();
-        marioGame.down();
-        marioGame.up();
-        marioGame.right();
+        SuperContra.left();
+        SuperContra.down();
+        SuperContra.up();
+        SuperContra.right();
     }
 }
