@@ -1,15 +1,17 @@
 package com.example.phaseOne.game;
 
+import com.example.phaseOne.GamingConsole;
+
 public class GameRunner {
     Mario marioGame;
-    private SuperContra SuperContra;
-    public GameRunner(SuperContra SuperContra){
-        this.SuperContra=SuperContra;
+    private GamingConsole gamingConsole;
+    public GameRunner(GamingConsole gamingConsole){
+        this.gamingConsole=gamingConsole;
     }
     public void run() {
-        SuperContra.left();
-        SuperContra.down();
-        SuperContra.up();
-        SuperContra.right();
+        gamingConsole.left();
+        gamingConsole.down();
+        gamingConsole.up();
+        gamingConsole.right();
     }
 }
